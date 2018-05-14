@@ -16,6 +16,7 @@ public class Connector {
             con.setReadTimeout(15000);
             con.setDoInput(true);
             return con;
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
             return "Error " + e.getMessage();
